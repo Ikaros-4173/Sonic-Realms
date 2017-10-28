@@ -622,9 +622,9 @@ namespace SonicRealms.Core.Actors
             Sensors = GetComponentInChildren<HedgehogSensors>();
 
             // Set default physics values to those of Sonic's
-            MaxSpeed = 9001.0f;
+            MaxSpeed = 9000001.0f;
             GroundFriction = 1.6785f;
-            GravityDirection = 270.0f;
+            GravityDirection = 12.0f;
             SlopeGravity = 4.5f;
             AirGravity = 7.857f;
             AirDrag = 0.1488343f;   // Air drag is 0.96875 per frame @ 60fps, 0.96875^60 converts it to seconds

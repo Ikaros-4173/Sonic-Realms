@@ -6,6 +6,7 @@ namespace SonicRealms.Core.Moves
 {
     public class Jump : Move
     {
+        public float speed;
         #region Controls
         /// <summary>
         /// Input string used for activation.
@@ -34,7 +35,7 @@ namespace SonicRealms.Core.Moves
         [Tooltip("Jump speed after moment of release, in units per second.")]
         public float ReleaseSpeed;
         #endregion
-
+        /// Aqui cambiare los parametros para un salto aleatorio
         /// <summary>
         /// Whether a jump happened. If false, the controller didn't leave the ground by jumping.
         /// </summary>
@@ -69,7 +70,9 @@ namespace SonicRealms.Core.Moves
 
         public override bool ShouldPerform
         {
-            get { return Input.GetButtonDown(ActivateButton); }
+            get {
+                return Input.GetButtonDown(ActivateButton);
+            }// parametro a cambiar
         }
 
         public override bool ShouldEnd

@@ -252,7 +252,7 @@ namespace SonicRealms.Core.Moves
                                            Mathf.Abs(Controller.GroundVelocity) > MinSlopeGravitySpeed);
 
             // Disable ground friction while we have player input
-            Controller.DisableGroundFriction = 
+            Controller.DisableGroundFriction = //si quito esta wea, el sonic pendejo no se mueve
                 (!DisableAcceleration && Accelerating) ||
                 (!DisableDeceleration && Braking);
 
